@@ -129,7 +129,7 @@
                         <Export-Package>org.mongojack</Export-Package>
                     </instructions>
                 </configuration>
-                <executions>
+<!--                <executions>
                     <execution>
                         <id>bundle-manifest</id>
                         <phase>process-classes</phase>
@@ -137,7 +137,7 @@
                             <goal>manifest</goal>
                         </goals>
                     </execution>
-                </executions>
+                </executions> -->
             </plugin>
 
         </plugins>
