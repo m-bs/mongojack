@@ -1,6 +1,5 @@
 /*
- * Copyright 2011 VZ Netzwerke Ltd
- * Copyright 2014 devbliss GmbH
+ * Copyright 2014 Christopher Exell
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,15 +13,18 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.mongojack.internal.util;
-
-import com.fasterxml.jackson.core.Version;
-import com.fasterxml.jackson.core.util.VersionUtil;
+package org.mongojack.mock;
 
 /**
- * Looks up the version of the MongoJack
+ * A class used to receive an aggregation result that differs from the MockObject
  */
-public class VersionUtils {
-    public static final Version VERSION = VersionUtil.mavenVersionFor(VersionUtils.class.getClassLoader(),
-            "org.mongojack", "mongojack");
+public class MockObjectAggregationResult
+{
+    public String _id;
+    public String string;
+    public Integer integer;
+    public Integer distance;
+
+    public MockObjectAggregationResult() {
+    }
 }

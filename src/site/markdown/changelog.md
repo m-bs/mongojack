@@ -1,9 +1,30 @@
 Changelog
 =========
 
+2.1.0
+-----
+
+_Released 2014.07.29_
+
+* Update dependency versions (by lukelukeluke)
+* Extended Readme to explain Snapshot installations (by abc2mit)
+* Updated mongo-java-driver to newer version (by benmccann)
+* Upgrade Jackson and Bson4Jackson to prevent potential conflicts with Jackson 2.2.X (by yunspace)
+* Implementation of the mongoDB Aggregation feature
+* Added a how-to-release documentation
+
 2.0.0
 -----
 
+_Released 2014.01.13_
+
+* code cleanups & some new tests
+* upgrade mongo-java-driver to 2.11.3 and jackson to 2.2.3 (by benmccann)
+* adding parameterized findAndModify (by truthspirit)
+* updated mongo-java-driver, jackson-databind, bson4jackson and junit to newer versions (by benmccann)
+* Fixed bug in query serialization for DBQuery.all (by saadmufti)
+* Added some notes about thread-safety (by benmccann)
+* Updated pom.xml to build osgi bundle (by m-bs-jmeyer)
 * Proper update and query serialization support.
 * Renamed to MongoJack.
 * Added a DBSort helper utility.
